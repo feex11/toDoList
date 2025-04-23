@@ -2,17 +2,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-
-body{
+body {
     font-family: Roboto, Arial, sans-serif;
     margin: 0;
     padding: 0;
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start; /* Alinhar no topo em vez do centro */
     background: linear-gradient(to right, #ff7e5f, #feb47b);
-}
+    padding-top: 200px; /* Compensa o header fixo */
+    box-sizing: border-box;
+  }
+  
 
 h1{
   color:  #ff3300
@@ -42,6 +44,30 @@ h1{
     margin-right: 50px;
 }
 
+/* MEDIA QUERIES PARA RESPONSIVIDADE */
+@media (max-width: 1400px) {
+    .parent {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  @media (max-width: 1100px) {
+    .parent {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (max-width: 800px) {
+    .parent {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .parent {
+      grid-template-columns: 1fr;
+    }
+  }
     
 .div1 {
     display: flex;
