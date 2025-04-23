@@ -61,15 +61,6 @@ h1{
     gap: 12px; /* gap entre tarefas */
 }
 
-/* Estilo das tarefas */
-.tarefa {
-    background-color: #ffd1b3;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
-    font-size: 16px;
-}
-  
 
 .titulo{
     width: 100%;
@@ -110,7 +101,7 @@ h1{
 }
 
 .input:focus{
-    border: 2px solid lightsalmon
+    border: 2px solid lightsalmon;
 }
 
 .div1 i{
@@ -151,7 +142,6 @@ h1{
     gap: 30px;
     align-items: center;
     padding: 10px;
-    background-color: white;
     border-radius: 8px;
     background-color: #ffa07a;
   }
@@ -165,6 +155,8 @@ h1{
   }
   
   .input2 {
+    color: white;
+    font-weight: bold  ;
     font-family: Roboto, Arial, sans-serif;
     width: 100%;
     min-height: 30px;
@@ -217,3 +209,35 @@ h1{
     background-color: #ffb3a6;
     color: white;
 }
+
+.checkbox {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #ffa07a;
+    border: 2px solid #ffe1d6;
+    padding: 8px;
+    border-radius: 4px;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .checkbox:checked {
+    background-color: #41b02a;
+    border-color: #41b02a;
+  }
+  
+  .checkbox:checked::after {
+    content: "✔";
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+
+  

@@ -39,7 +39,9 @@ document.addEventListener("click", function (event) {
       card.className = "tarefa";
       card.innerHTML = `
         <textarea placeholder="Digite a tarefa" class="input2"></textarea>
+        <input type="checkbox" class="checkbox" title="Marcar como concluído" />
         <button class="deleteTarefa" title="Remover"><i class="fa-solid fa-trash"></i></button>
+        
       `;
   
       const conteudoLista = btn.closest(".conteudo-lista");
