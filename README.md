@@ -1,6 +1,6 @@
 # toDoList( ); by Feex
 
-![Acesse o projeto aqui:](https://feex11.github.io/toDoList/) >
+- [Acesse o projeto](https://feex11.github.io/toDoList/)
 
 ## Descrição
 
