@@ -33,42 +33,43 @@ h1{
 .parent {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    gap: 8px;
+    grid-auto-rows: min-content; /* cada linha cresce conforme o conteúdo */
+    gap: 50px;
+    align-items: start; /* <--- Isso força cada item a alinhar no topo */
+
     height: 600px;
     width: 100%;
-    gap: 50px;
     margin-left: 50px;
     margin-right: 50px;
 }
+
     
 .div1 {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     padding: 10px;
-    height: 100%; /* importante */
+    height: auto; /* Ajusta a altura automaticamente */
     background-color: #ffe1d6;
     border-radius: 10px;
-  }
-  
-  /* Container de tarefas + botão */
-  .conteudo-lista {
+}
+
+/* Container de tarefas + botão */
+.conteudo-lista {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     flex-grow: 1;
     gap: 12px; /* gap entre tarefas */
-  }
-  
-  /* Estilo das tarefas */
-  .tarefa {
+}
+
+/* Estilo das tarefas */
+.tarefa {
     background-color: #ffd1b3;
     padding: 10px;
     border-radius: 8px;
     box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
     font-size: 16px;
-  }
+}
   
 
 .titulo{
@@ -195,4 +196,25 @@ h1{
 
 .deleteTarefa i{
     font-size: 16px;
+}
+
+.addList{
+    font-weight: bold;
+    text-align: left;
+    height: 40px;
+    width: 300px;
+    background-color: rgba(255, 225, 214, 0.8);
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: black;
+    padding: 10px;
+    margin: 0;
+}
+
+.addList:hover{
+    background-color: #ffb3a6;
+    color: white;
 }
